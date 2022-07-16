@@ -1,0 +1,29 @@
+@mixin container{
+    max-width: 1110px;
+    padding-right:2rem;
+    padding-left: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+@mixin responsive($breakpoints) {
+    @if ($breakpoints == m-phone)  {
+        @media only screen and (max-width:440px ) {@content}
+    };
+    @if ($breakpoints == phone)  {
+        @media only screen and (max-width:576px ) {@content}
+    };
+    @if ($breakpoints == tables)  {
+        @media only screen and (max-width:768px ) {@content}
+    };
+    @if($breakpoints == middle-table) {
+        @media only screen and (max-width: 885px) { @content }
+    };
+    @if ($breakpoints == big-table)  {
+        @media only screen and (max-width: 993px) {@content}
+    };
+    @if ($breakpoints == desktop)  {
+        @media only screen and (max-width: 1210px) {@content}
+    }
+}

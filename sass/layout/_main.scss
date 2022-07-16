@@ -1,0 +1,203 @@
+.main{
+    &__snakers{
+        margin-top: 9rem;
+        @include container;
+        display: flex;
+        justify-content: space-around;
+        @include responsive (m-phone){
+            margin: 0;
+            display: block;
+        }
+    }
+    &__glav-img{
+        @include responsive (m-phone){
+            display: none;
+        }
+        @include responsive (m-phone){
+            margin-top: 2rem;
+            
+            margin-left: -3rem;
+            width: 377px;
+            height: 300px;
+        }
+    }
+    &__strelka-one{
+        display: none;
+        @include responsive (m-phone){
+            display: block;
+        }
+        border-radius:50%;
+        padding: 1.4rem 1.7rem;
+        background-color: white;
+        cursor: pointer;
+        margin-left: -0.9rem;
+        margin-top: -17rem;
+        position: absolute;
+    }
+    &__strelka-two{
+        display: none;
+        @include responsive (m-phone){
+            display: block;
+        }
+        border-radius:50%;
+        padding: 1.4rem 1.7rem;
+        background-color: white;
+        cursor: pointer;
+        margin-left: 29rem;
+        margin-top: -17rem;
+        position: absolute;
+    }
+    &__snakers-info{
+        margin-top: 5rem;
+        h4{
+            margin-bottom: 2.7rem;
+            text-transform: uppercase;
+            color: #FF7E1B;
+        }
+        h2{
+            margin-bottom: 3.2rem;
+            font-family: "Kumbh Sans";
+            font-weight: 700;
+            font-size: 4.4rem;
+            line-height: 1;
+        }
+    }
+    &__info-p{
+        margin-bottom: 2.8rem;
+        font-weight: 400;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.6;
+        color: #69707D;
+
+    }
+    &__btn{
+        @include responsive (m-phone){
+            justify-content: space-between;
+            width: 100%;
+            max-width: 330px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 3rem;
+        }
+        display: flex;
+        align-items: center;
+        width: 165px;
+        border-radius: 10px;
+        padding: 1.8rem 1.6rem;
+        background-color: #F6F8FD;
+        img:nth-child(1){
+            cursor: pointer;
+            object-fit: cover;
+            width: 13px;
+            height: 4.33px;
+            color: #FF7E1B;
+            margin-right: 4.5rem;
+        }
+        img:nth-child(3){
+            cursor: pointer;
+            object-fit: cover;
+            width: 13px;
+            height: 13.71px;
+            color: #FF7E1B;
+            margin-left: 4.5rem;
+        }
+        img{
+            transition: 0.5s ease;
+        }
+        img:hover{
+            opacity: 0.5;
+        }
+    }
+    &__btn-section{
+        @include responsive (m-phone){
+            display: block;
+        }
+        display: flex;
+        align-items: center;
+        a{
+            @include responsive (m-phone){
+                width: 100%;
+                max-width: 327px;
+                margin-left: 0;
+                padding: 1.9rem 11.8rem 1.8rem 10.4rem;
+                margin-bottom: 5rem;
+            }
+            transition: 0.5s ease;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 1.9rem 7.7rem;
+            margin-left: 1.6rem;
+            background-color: #FF7E1B;
+            color: white;
+            img{
+                @include responsive (m-phone){
+                
+                    margin: 0;
+                }
+                margin-right: 1.5rem;
+            }
+        }
+        a:hover{
+            background-color: #FFAB6A;
+            box-shadow: 0px 20px 50px -20px #FF7E1B;
+        }
+    }
+    &__gray-price{
+        margin-bottom: 3.2rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.62;
+        color: #B6BCC8;
+        text-decoration: line-through;
+    }
+    &__price{
+        display: flex;
+        align-items: center;
+        h3{
+            font-family: "Kumbh Sans";
+            font-weight: 700;
+            font-size: 2.8rem;
+        }
+        span{
+            margin-left: 1.6rem;
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 1.24;
+            border-radius: 6px;
+            padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+            background-color:  #FFEEE2;
+            color: #FF7E1B;
+        }
+    }
+    &__list{
+        @include responsive (m-phone){
+            display: none;
+        }
+        margin-top: 3.2rem;
+        display: flex;
+        list-style-type: none;
+
+    }
+    &__item:not(:last-child){
+        margin-right: 2.9rem;
+    }
+    &__item{
+        transition: 0.5s ease;
+    }
+    &__item:hover{
+        opacity: 0.5;
+    }
+    &__resp-glav-img{
+        display: none;
+        @include responsive (m-phone){
+            margin-top: 2rem;
+            
+            margin-left: -3rem;
+            width: 377px;
+            height: 300px;
+            display: block;
+        }
+    }
+
+}

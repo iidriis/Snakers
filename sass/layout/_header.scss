@@ -1,0 +1,73 @@
+.header{
+    &__burger{
+        display: none;
+        @include responsive (m-phone){
+            margin-left: 2rem;
+            display: block;
+        }
+    }
+    &__logo{
+        margin-left: -2rem;
+    }
+    &__nav{
+        @include responsive (m-phone){
+                
+            padding: 0;
+        }
+        padding-bottom: 4.5rem;
+        margin-top: 2.8rem;
+        @include container;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+    &__list{
+        @include responsive (m-phone){
+            display: none;
+        }
+        display: flex;
+        list-style-type: none;
+
+    }
+    &__item:not(:last-child){
+        margin-right: 3.2rem;
+    }
+    &__item{
+        cursor: pointer;
+        color: #69707D;
+    }
+    &__item:hover{
+        border-bottom: 2px solid #FF7E1B;  
+    }
+    &__images{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__korzina{
+        @include responsive (m-phone){
+                
+            margin: 2rem;
+        }
+        margin-right:4.6rem ; 
+    }
+    &__oval:hover{
+        display: inline-flex;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid #FF7E1B;
+    }
+    &__hr{
+        @include responsive (m-phone){
+            display: none;
+        }
+        color: #E4E9F2;
+        margin-right: auto;
+        margin-left: auto;
+        width: 1055px;
+    }
+    &__active-cart{
+        position: absolute;
+        display: none;
+    }
+}
